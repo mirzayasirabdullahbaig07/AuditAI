@@ -5,7 +5,38 @@ from utils import normalize_url, is_valid_url
 from scoring import calculate_score
 from dashboard import show_dashboard
 
+# Page Config
 st.set_page_config(page_title="AI Website Auditor - Agentic", layout="wide")
+
+# ---------- SIDEBAR: ABOUT US ----------
+st.sidebar.title("👨‍💻 About Us")
+
+st.sidebar.write("""
+**AuditAI** is an Agentic AI-powered website auditing tool that analyzes
+SEO, performance, accessibility, and security issues using AI-generated insights.
+
+Built for **DevLaunch Hackathon 2026**.
+""")
+
+st.sidebar.subheader("🚀 Team Lead")
+st.sidebar.write("""
+**Mirza Yasir Abdullah Baig**
+
+AI & Web Developer passionate about building intelligent applications
+using **Agentic AI** and **Machine Learning**.
+""")
+
+st.sidebar.markdown("""
+🔗 **Connect with me**
+- [LinkedIn](https://www.linkedin.com/in/mirza-yasir-abdullah-baig/)
+- [GitHub](https://github.com/mirzayasirabdullahbaig07)
+- [Kaggle](https://www.kaggle.com/mirzayasirabdullah07)
+""")
+
+st.sidebar.markdown("---")
+# ---------- END SIDEBAR ----------
+
+# Main App
 st.title("🧠 AI Website Auditor - Agentic Edition")
 st.write("Paste a website URL to scan, analyze, and get **AI-generated fixes** and optimized HTML!")
 
@@ -33,19 +64,17 @@ if st.button("Scan Website"):
             scan_data["accessibility_score"] = max(0, 100 - scan_data.get("images_without_alt",0)*5)
             scan_data["security_score"] = 100 if scan_data.get("https") else 50
 
-            # --- Dashboard (handles metrics and charts) ---
+            # --- Dashboard ---
             show_dashboard(scan_data, ai_report)
 
             # --- Agentic AI Actions ---
             st.subheader("🤖 Agentic AI Actions")
 
-            # Show fix snippets
             if ai_report.get("fix_snippets"):
                 st.write("### Suggested Fix Snippets")
                 for snippet in ai_report["fix_snippets"]:
                     st.code(snippet, language="html")
 
-            # Download optimized HTML
             if ai_report.get("optimized_html"):
                 st.write("### Download Optimized HTML")
                 st.download_button(
@@ -55,7 +84,6 @@ if st.button("Scan Website"):
                     mime="text/html"
                 )
 
-            # Optional: View full AI suggestions
             st.subheader("⚠️ AI Suggestions & Issues")
             for issue in ai_report.get("issues", []):
                 st.write("•", issue)
