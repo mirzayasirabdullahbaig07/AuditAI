@@ -4,8 +4,6 @@ An **Agentic AI-powered web application** built with **Streamlit** that audits a
 
 ---
 
----
-
 ## 🚀 Demo
 🔗 [Live App on Streamlit](https://auditai07.streamlit.app/)
 
