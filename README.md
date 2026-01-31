@@ -93,5 +93,3 @@ An **Agentic AI-powered web application** built with **Streamlit** that audits a
 ```bash
 git clone https://github.com/mirzayasirabdullahbaig07/AuditAI.git
 cd AuditAI
-
----
