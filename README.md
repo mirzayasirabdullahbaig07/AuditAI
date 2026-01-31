@@ -12,8 +12,6 @@ An **Agentic AI-powered web application** built with **Streamlit** that audits a
 
 --- 
 
----
-
 ## 📌 Features
 
 - 🔍 **Website Scanning**
@@ -61,6 +59,24 @@ An **Agentic AI-powered web application** built with **Streamlit** that audits a
 
 ---
 
+## 📸 Screenshots
+### 🏠 Home Page
+<img width="1887" height="754" alt="Screenshot 2026-01-31 184415" src="https://github.com/user-attachments/assets/2da141de-faf8-49d4-a3bf-30df7344460c" />
+
+### ✅ Page 1
+<img width="1880" height="803" alt="Screenshot 2026-01-31 184444" src="https://github.com/user-attachments/assets/90c03d12-2c95-465a-9d45-765ab34550ab" />
+
+### ✅ Page 2
+<img width="1906" height="820" alt="Screenshot 2026-01-31 184512" src="https://github.com/user-attachments/assets/9da20264-3848-4f27-ad50-a94fdb2bf7fb" />
+
+### ✅ Page 3
+<img width="1873" height="841" alt="Screenshot 2026-01-31 184550" src="https://github.com/user-attachments/assets/375cf176-758a-4025-8c93-910700a87f13" />
+
+### ✅ Page 4
+<img width="1879" height="787" alt="Screenshot 2026-01-31 184621" src="https://github.com/user-attachments/assets/4c89eb51-b91a-47e1-b487-1eb7e1d722f5" />
+
+---
+
 ## 📊 How It Works
 
 1. The app scans the website using **BeautifulSoup & Requests**.
@@ -88,10 +104,19 @@ An **Agentic AI-powered web application** built with **Streamlit** that audits a
 
 ---
 
-## 📂 Project Structure
+## 👨‍💻 Author
+**Mirza Yasir Abdullah Baig**  
 
+- 🌐 [Kaggle](https://www.kaggle.com/mirzayasirabdullah07)  
+- 💼 [LinkedIn](https://www.linkedin.com/in/mirza-yasir-abdullah-baig/)  
+- 💻 [GitHub](https://github.com/mirzayasirabdullahbaig07)  
 
 ---
+
+## ⚠️ Disclaimer
+This project is for **educational purposes only** and should **NOT** be used as a substitute for professional medical diagnosis.  
+
+--- 
 
 ### 1️⃣ Clone the Repository
 
